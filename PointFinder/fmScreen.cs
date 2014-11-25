@@ -22,10 +22,15 @@ namespace PointFinder
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-            //this.Width = Screen.PrimaryScreen.WorkingArea.Width;
-            //this.Height = Screen.PrimaryScreen.WorkingArea.Height;
-            this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;            
+
+            //to be implemented: if Alt key is down then cleaning txt file 
+            //to be implemented: double-clicking and holding a button (to be put in comments)
+
+            StreamWriter file = new StreamWriter("GeneratedCode.txt", true);
+            file.WriteLine("//[TestMethod][Timeout(TestTimeout.Infinite)]");
+            file.WriteLine("//Playback.PlaybackSettings.ContinueOnError = true;");                        
+            file.Close();
         }
 
         private void fmScreen_DoubleClick(object sender, EventArgs e)
