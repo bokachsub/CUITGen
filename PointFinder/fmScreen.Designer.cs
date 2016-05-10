@@ -38,6 +38,7 @@
             this.Name = "fmScreen";
             this.Opacity = 0.7D;
             this.Text = "fmScreen";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fmScreen_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.DoubleClick += new System.EventHandler(this.fmScreen_DoubleClick);
             this.ResumeLayout(false);
@@ -45,6 +46,7 @@
         }
 
         #endregion
+
     }
 }
 
