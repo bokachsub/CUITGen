@@ -49,7 +49,7 @@ namespace PointFinder
             if (ModifierKeys.HasFlag(Keys.Shift))
             {
                 file.WriteLine(); 
-                file.WriteLine("Mouse.StartDragging(null, new Point({0}, {1})); System.Threading.Thread.Sleep(sleepTimeBetweenActions);", Cursor.Position.X, Cursor.Position.Y);
+                file.WriteLine("Mouse.StartDragging(null, new Point({0}, {1}));", Cursor.Position.X, Cursor.Position.Y);
                 dragStartedAtX = Cursor.Position.X;
                 dragStartedAtY = Cursor.Position.Y; 
             }
