@@ -33,6 +33,7 @@ namespace PointFinder
             file.WriteLine("int oneSecond = 1000, twoSeconds = 2000, threeSeconds = 3000, fiveSeconds = 5000, sevenSeconds = 7000, tenSeconds = 10000, twoMinutes = 120000;");
             file.WriteLine("int sleepTimeBetweenActions = oneSecond;");
             file.WriteLine("int stopRequested = twoMinutes;");
+            file.WriteLine("System.Threading.Thread.Sleep(sevenSeconds);");
             file.Close();
         }
 
