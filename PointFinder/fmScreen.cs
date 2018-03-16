@@ -20,7 +20,10 @@ namespace PointFinder
         {            
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
-            
+            MessageBox.Show(" dbl_click will record a CLICK" +
+                            "\r\n ALT + dbl_click will record COMMENTED CLICK " +
+                            "\r\n SHIFT + dbl_click will record STARTDRAGGING" +
+                            "\r\n CTRL + dbl_click will record STOP DRAGGING ");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -85,7 +88,5 @@ namespace PointFinder
         {
             System.Diagnostics.Process.Start("notepad.exe", "GeneratedCode.txt");
         }
-
-
     }
 }
